@@ -24,7 +24,13 @@ config.keys = {
     -- Select pane by default alpha chars
     { key = 'a', mods = 'LEADER', action = act.PaneSelect },
 
-    -- Switch pane by direction
+    -- Switch to pane (independent keymaps)
+    {key = 'h', mods = 'LEADER', action = wezterm.action.ActivatePaneDirection('Left')},
+    {key = 'j', mods = 'LEADER', action = wezterm.action.ActivatePaneDirection('Down')},
+    {key = 'k', mods = 'LEADER', action = wezterm.action.ActivatePaneDirection('Up')},
+    {key = 'l', mods = 'LEADER', action = wezterm.action.ActivatePaneDirection('Right')},
+
+    -- Switch to pane (key table mode)
     {
         key = 'p',
         mods = 'LEADER',
@@ -47,7 +53,7 @@ config.keys = {
     },
 
     -- TABS
-    -- Move to other tab
+    -- Switch to tab
     {
         key = 't',
         mods = 'LEADER',
