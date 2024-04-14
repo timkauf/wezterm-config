@@ -31,6 +31,7 @@ config.keys = {
         action = act.ActivateKeyTable {
             name = 'switch_pane',
             one_shot = false,
+            timeout_milliseconds = 1500,
         },
     },
 
@@ -41,6 +42,7 @@ config.keys = {
         action = act.ActivateKeyTable {
             name = 'resize_pane',
             one_shot = false,
+            timeout_milliseconds = 1500,
         },
     },
 
@@ -51,8 +53,8 @@ config.keys = {
         mods = 'LEADER',
         action = act.ActivateKeyTable {
             name = 'switch_tab',
-            timeout_milliseconds = 5000,
-            -- one_shot = false,
+            one_shot = false,
+            timeout_milliseconds = 1500,
         },
     },
 
@@ -63,6 +65,7 @@ config.keys = {
         action = act.ActivateKeyTable {
             name = 'move_tab',
             one_shot = false,
+            timeout_milliseconds = 1500,
         },
     },
 
